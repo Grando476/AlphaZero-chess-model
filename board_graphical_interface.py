@@ -30,9 +30,9 @@ class Interface_Tictactoe:
 		pg.display.set_caption("Tic Tac Toe")
 
 		# loading the images as python object
-		initiating_window = pg.image.load("modified_cover.png")
-		x_img = pg.image.load("X_modified.png")
-		y_img = pg.image.load("o_modified.png")
+		initiating_window = pg.image.load("boards\modified_cover.png")
+		x_img = pg.image.load("boards\X_modified.png")
+		y_img = pg.image.load("boards\o_modified.png")
 
 		# resizing images
 		self.initiating_window = pg.transform.scale(
@@ -761,9 +761,9 @@ class Interface_Chess():
 		pg.display.set_caption("Chess")
 
 		# loading the images as python object
-		initiating_window = pg.image.load("modified_cover.png")
-		x_img = pg.image.load("X_modified.png")
-		y_img = pg.image.load("o_modified.png")
+		initiating_window = pg.image.load("images\modified_cover.png")
+		x_img = pg.image.load("images\X_modified.png")
+		y_img = pg.image.load("images\o_modified.png")
 
 		# resizing images
 		self.initiating_window = pg.transform.scale(

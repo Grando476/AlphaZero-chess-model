@@ -152,12 +152,14 @@ def self_play(game, model, num_games=10, simulations=50):
 
             policy_vector = np.zeros(flat_size * flat_size, dtype=np.float32)
 
+            # Inside your try block:
             try:
-                fr, fc, tr, tc, *_ = action
+                fr, fc, tr, tc = action[0], action[1], action[2], action[3]
 
                 if not (0 <= fr < rows and 0 <= fc < cols and 0 <= tr < rows and 0 <= tc < cols):
                     print("[WARNING] Skipping invalid board coordinates:", action)
-                    continue
+                    done = True
+                    break
 
                 from_index = fr * cols + fc
                 to_index = tr * cols + tc
@@ -167,11 +169,14 @@ def self_play(game, model, num_games=10, simulations=50):
                     policy_vector[action_index] = 1.0
                 else:
                     print("[WARNING] Skipping out-of-bounds action index:", action_index)
-                    continue
+                    done = True
+                    break
 
             except Exception as e:
                 print("ACTION ERROR:", action)
-                raise e
+                done = True
+                break
+
 
             trajectory.append((encoded, policy_vector, player))
 
