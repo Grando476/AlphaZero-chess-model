@@ -1,0 +1,9 @@
+   a b c d e
+   ---------
+5 |S H K G W| 5
+4 |P P P P P| 4
+3 |. . . . .| 3
+2 |p p p p p| 2
+1 |w g k h s| 1
+   ---------
+   a b c d e 

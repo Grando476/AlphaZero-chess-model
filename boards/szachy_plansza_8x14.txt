@@ -1,0 +1,12 @@
+   a b c d e f g h i j k l m n
+   ----------------------------
+8 |W W S S G G H K G G S S W W | 8
+7 |P P P P P P P P P P P P P P | 7
+6 |. . . . . . . . . . . . . . | 6
+5 |. . . . . . . . . . . . . . | 5
+4 |. . . . . . . . . . . . . . | 4
+3 |. . . . . . . . . . . . . . | 3
+2 |p p p p p p p p p p p p p p | 2
+1 |w w s s g g h k g g s s w w | 1
+   ----------------------------
+   a b c d e f g h i j k l m n
