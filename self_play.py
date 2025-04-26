@@ -7,6 +7,7 @@ from mcts import MCTSNode, MCTS
 from ChessGame import ChessNet
 from utils import encode_state
 from strategies import Strategy_MCTS
+import board_games_fun as bfun
 
 # Parameters
 NUM_GAMES = 2  # number of self-play games
@@ -17,7 +18,8 @@ if not os.path.exists(SAVE_DIR):
     os.makedirs(SAVE_DIR)
 
 # Initialize game and model
-game = Chess()
+game = bfun.Chess("boards\szachy_plansza_top.txt")
+
 model = ChessNet()
 
 # Strategy
