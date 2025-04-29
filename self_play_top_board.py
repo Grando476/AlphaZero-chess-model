@@ -9,7 +9,7 @@ from utils import encode_state
 
 # Parameters
 SIMULATIONS_PER_MOVE = 100
-MAX_MOVES = 10  # Limit moves to avoid endless games
+MAX_MOVES = 50  # Limit moves to avoid endless games
 
 # Note: Action space still assumed to be 4672 for ChessNet compatibility
 

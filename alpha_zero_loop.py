@@ -8,9 +8,9 @@ import board_games_fun as bfun
 from strategies import Strategy_MCTS
 
 # AlphaZero Loop Parameters
-CYCLES = 2  # Number of self-play + training cycles
-GAMES_PER_CYCLE = 3
-SIMULATIONS_PER_MOVE = 10
+CYCLES = 10  # Number of self-play + training cycles
+GAMES_PER_CYCLE = 100
+SIMULATIONS_PER_MOVE = 400
 SAVE_MODEL_PATH = "models/chessnet_top_board.pth"
 SAVE_DATA_DIR = "self_play_data_top"
 BATCH_SIZE = 64
