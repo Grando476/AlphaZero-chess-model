@@ -1,0 +1,255 @@
+node with attribute a9
+--- a9 == 1 -> node with attribute a4
+------ a4 == 1 -> class 1
+------ a4 == 2 -> node with attribute a1
+--------- a1 == 1 -> class 1
+--------- a1 == 3 -> node with attribute a2
+------------ a2 == 3 -> class 1
+------------ a2 == 8 -> class 1
+------------ a2 == 11 -> class 2
+--------- a1 == 4 -> class 2
+--------- a1 == 5 -> class 1
+--------- a1 == 6 -> class 1
+--------- a1 == 7 -> class 1
+--------- a1 == 9 -> class 2
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 2
+--------- a1 == 12 -> class 2
+------ a4 == 3 -> class 1
+------ a4 == 4 -> class 1
+------ a4 == 5 -> node with attribute a1
+--------- a1 == 1 -> class 2
+--------- a1 == 2 -> class 1
+--------- a1 == 3 -> class 1
+--------- a1 == 4 -> class 1
+--------- a1 == 5 -> class 1
+--------- a1 == 6 -> class 1
+--------- a1 == 8 -> class 2
+--------- a1 == 9 -> class 2
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 1
+--------- a1 == 12 -> class 1
+------ a4 == 6 -> node with attribute a1
+--------- a1 == 2 -> class 1
+--------- a1 == 3 -> class 2
+--------- a1 == 4 -> class 2
+--------- a1 == 5 -> class 2
+--------- a1 == 6 -> class 2
+--------- a1 == 7 -> class 1
+--------- a1 == 8 -> node with attribute a2
+------------ a2 == 7 -> class 2
+------------ a2 == 11 -> class 1
+--------- a1 == 9 -> node with attribute a2
+------------ a2 == 1 -> class 1
+------------ a2 == 5 -> class 2
+------------ a2 == 10 -> class 1
+--------- a1 == 11 -> class 2
+--------- a1 == 12 -> class 1
+------ a4 == 7 -> class 1
+------ a4 == 8 -> class 1
+------ a4 == 9 -> node with attribute a1
+--------- a1 == 2 -> class 2
+--------- a1 == 3 -> class 1
+--------- a1 == 4 -> class 1
+--------- a1 == 5 -> node with attribute a2
+------------ a2 == 3 -> class 2
+------------ a2 == 9 -> class 1
+------------ a2 == 10 -> class 1
+--------- a1 == 6 -> class 1
+--------- a1 == 7 -> class 1
+--------- a1 == 9 -> node with attribute a2
+------------ a2 == 2 -> class 1
+------------ a2 == 5 -> class 2
+------------ a2 == 7 -> class 1
+------------ a2 == 11 -> class 1
+------------ a2 == 12 -> class 1
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 2
+--------- a1 == 12 -> node with attribute a2
+------------ a2 == 2 -> class 1
+------------ a2 == 4 -> class 1
+------------ a2 == 6 -> class 2
+------ a4 == 10 -> node with attribute a1
+--------- a1 == 1 -> class 1
+--------- a1 == 2 -> class 1
+--------- a1 == 3 -> class 1
+--------- a1 == 4 -> class 1
+--------- a1 == 6 -> class 1
+--------- a1 == 7 -> class 1
+--------- a1 == 8 -> node with attribute a3
+------------ a3 == 3 -> class 2
+------------ a3 == 9 -> class 1
+------------ a3 == 11 -> class 1
+------------ a3 == 12 -> class 1
+--------- a1 == 9 -> class 1
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 1
+--------- a1 == 12 -> class 2
+------ a4 == 11 -> node with attribute a2
+--------- a2 == 1 -> class 1
+--------- a2 == 2 -> node with attribute a1
+------------ a1 == 4 -> class 1
+------------ a1 == 9 -> class 1
+------------ a1 == 10 -> class 2
+--------- a2 == 4 -> class 1
+--------- a2 == 6 -> class 1
+--------- a2 == 7 -> class 2
+--------- a2 == 8 -> class 1
+--------- a2 == 9 -> class 1
+--------- a2 == 10 -> class 1
+--------- a2 == 11 -> class 1
+--------- a2 == 12 -> class 1
+------ a4 == 12 -> node with attribute a1
+--------- a1 == 1 -> class 1
+--------- a1 == 2 -> class 1
+--------- a1 == 3 -> class 1
+--------- a1 == 7 -> class 2
+--------- a1 == 8 -> class 1
+--------- a1 == 9 -> class 1
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 1
+--------- a1 == 12 -> node with attribute a2
+------------ a2 == 3 -> class 1
+------------ a2 == 5 -> class 2
+------------ a2 == 6 -> class 1
+------------ a2 == 7 -> class 1
+--- a9 == 2 -> node with attribute a1
+------ a1 == 1 -> node with attribute a3
+--------- a3 == 1 -> class 2
+--------- a3 == 2 -> node with attribute a2
+------------ a2 == 10 -> class 2
+------------ a2 == 12 -> class 1
+--------- a3 == 3 -> class 1
+--------- a3 == 4 -> class 2
+--------- a3 == 6 -> class 2
+--------- a3 == 7 -> class 1
+--------- a3 == 9 -> class 1
+--------- a3 == 12 -> class 1
+------ a1 == 2 -> node with attribute a2
+--------- a2 == 1 -> class 1
+--------- a2 == 2 -> class 2
+--------- a2 == 5 -> class 1
+--------- a2 == 6 -> class 1
+--------- a2 == 7 -> class 2
+--------- a2 == 9 -> node with attribute a3
+------------ a3 == 4 -> class 1
+------------ a3 == 7 -> class 1
+------------ a3 == 9 -> class 2
+--------- a2 == 10 -> class 1
+--------- a2 == 11 -> class 1
+--------- a2 == 12 -> class 1
+------ a1 == 3 -> node with attribute a2
+--------- a2 == 1 -> node with attribute a3
+------------ a3 == 3 -> class 2
+------------ a3 == 6 -> class 1
+------------ a3 == 10 -> class 2
+--------- a2 == 2 -> class 2
+--------- a2 == 3 -> class 2
+--------- a2 == 6 -> node with attribute a3
+------------ a3 == 2 -> class 1
+------------ a3 == 7 -> class 2
+--------- a2 == 7 -> class 2
+--------- a2 == 8 -> class 1
+--------- a2 == 9 -> class 1
+--------- a2 == 11 -> class 1
+--------- a2 == 12 -> class 2
+------ a1 == 4 -> class 2
+------ a1 == 5 -> class 2
+------ a1 == 6 -> class 2
+------ a1 == 7 -> node with attribute a3
+--------- a3 == 2 -> class 2
+--------- a3 == 4 -> class 2
+--------- a3 == 7 -> node with attribute a4
+------------ a4 == 1 -> class 2
+------------ a4 == 9 -> class 1
+--------- a3 == 9 -> class 1
+--------- a3 == 12 -> class 2
+------ a1 == 8 -> class 1
+------ a1 == 9 -> node with attribute a4
+--------- a4 == 1 -> class 2
+--------- a4 == 2 -> class 2
+--------- a4 == 3 -> class 1
+--------- a4 == 5 -> class 1
+--------- a4 == 6 -> node with attribute a2
+------------ a2 == 3 -> class 1
+------------ a2 == 5 -> class 1
+------------ a2 == 12 -> class 2
+--------- a4 == 7 -> class 1
+--------- a4 == 10 -> class 2
+--------- a4 == 11 -> class 2
+------ a1 == 10 -> node with attribute a4
+--------- a4 == 1 -> class 1
+--------- a4 == 2 -> node with attribute a2
+------------ a2 == 5 -> class 2
+------------ a2 == 6 -> class 1
+--------- a4 == 3 -> class 1
+--------- a4 == 4 -> class 1
+--------- a4 == 6 -> class 1
+--------- a4 == 8 -> class 2
+--------- a4 == 9 -> class 2
+--------- a4 == 11 -> class 2
+--------- a4 == 12 -> class 1
+------ a1 == 11 -> node with attribute a3
+--------- a3 == 1 -> class 1
+--------- a3 == 2 -> class 1
+--------- a3 == 5 -> class 1
+--------- a3 == 6 -> class 1
+--------- a3 == 7 -> class 2
+--------- a3 == 9 -> class 2
+--------- a3 == 11 -> class 2
+--------- a3 == 12 -> class 2
+------ a1 == 12 -> node with attribute a2
+--------- a2 == 1 -> class 2
+--------- a2 == 3 -> class 1
+--------- a2 == 4 -> class 1
+--------- a2 == 6 -> class 2
+--------- a2 == 8 -> class 1
+--------- a2 == 11 -> class 1
+--- a9 == 3 -> node with attribute a4
+------ a4 == 1 -> class 1
+------ a4 == 2 -> class 1
+------ a4 == 3 -> node with attribute a1
+--------- a1 == 1 -> class 2
+--------- a1 == 6 -> class 1
+--------- a1 == 7 -> class 1
+--------- a1 == 8 -> class 2
+--------- a1 == 9 -> class 1
+------ a4 == 4 -> node with attribute a3
+--------- a3 == 1 -> class 2
+--------- a3 == 2 -> class 1
+--------- a3 == 3 -> class 1
+--------- a3 == 6 -> class 2
+--------- a3 == 9 -> class 1
+--------- a3 == 10 -> class 2
+------ a4 == 5 -> node with attribute a1
+--------- a1 == 1 -> class 2
+--------- a1 == 2 -> class 1
+--------- a1 == 3 -> class 2
+--------- a1 == 4 -> class 2
+--------- a1 == 5 -> class 1
+--------- a1 == 6 -> class 1
+--------- a1 == 10 -> class 1
+--------- a1 == 11 -> class 2
+------ a4 == 6 -> node with attribute a3
+--------- a3 == 3 -> class 1
+--------- a3 == 4 -> class 1
+--------- a3 == 5 -> class 1
+--------- a3 == 6 -> class 1
+--------- a3 == 7 -> class 2
+--------- a3 == 8 -> class 2
+--------- a3 == 10 -> class 2
+--------- a3 == 11 -> class 1
+--------- a3 == 12 -> class 2
+------ a4 == 7 -> class 1
+------ a4 == 8 -> class 1
+------ a4 == 9 -> class 2
+------ a4 == 10 -> class 1
+------ a4 == 11 -> node with attribute a1
+--------- a1 == 1 -> class 1
+--------- a1 == 3 -> class 1
+--------- a1 == 4 -> class 1
+--------- a1 == 8 -> class 2
+--------- a1 == 9 -> class 1
+--------- a1 == 11 -> class 1
+--------- a1 == 12 -> class 1
+------ a4 == 12 -> class 2
