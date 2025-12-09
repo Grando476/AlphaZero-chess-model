@@ -2,20 +2,20 @@ import torch
 import os
 import random
 from ChessGame import ChessNet
-from self_play_top_board import self_play_game  # New version adapted for custom board
+from self_play_top_board import self_play_game  
 from train import load_self_play_data
 import board_games_fun as bfun
 from strategies import Strategy_MCTS
 
 # AlphaZero Loop Parameters
-CYCLES = 10  # Number of self-play + training cycles
+CYCLES = 20 # Number of self-play + training cycles
 GAMES_PER_CYCLE = 100
-SIMULATIONS_PER_MOVE = 400
-SAVE_MODEL_PATH = "models/chessnet_top_board.pth"
+SIMULATIONS_PER_MOVE = 60
+SAVE_MODEL_PATH = "models/chessnet_top_board2.pth" #nie ruszać numeru 4 i 3!!!!!!
 SAVE_DATA_DIR = "self_play_data_top"
-BATCH_SIZE = 64
-EPOCHS = 5
-LEARNING_RATE = 1e-3
+BATCH_SIZE = 48
+EPOCHS = 4
+LEARNING_RATE = 0.003
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -32,7 +32,7 @@ for cycle in range(CYCLES):
     print(f"=== Cycle {cycle+1}/{CYCLES} ===")
 
     # Self-play phase
-    game = bfun.Chess("boards\szachy_plansza_top.txt")  # Load custom board
+    game = bfun.Chess("boards\szachy_plansza_top.txt")  
     strategy = Strategy_MCTS(game, model, simulations=SIMULATIONS_PER_MOVE)
     all_data = []
 

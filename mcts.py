@@ -34,7 +34,7 @@ def encode_state(state: Chess.ChessState, player: int) -> np.ndarray:
     return encoded.copy()
 
 
-# === MCTS Node and Tree ===
+# MCTS Node and Tree
 class MCTSNode:
     def __init__(self, state, player, parent=None):
         self.state = state
@@ -106,7 +106,7 @@ class MCTS:
         return best_action, best_child
 
 
-# === Strategy Using MCTS and Neural Net ===
+# Strategy Using MCTS and Neural Net
 class Strategy_MCTS:
     def __init__(self, game, model, simulations=200):
         self.game = game

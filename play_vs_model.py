@@ -6,7 +6,7 @@ from ChessGame import ChessNet
 import board_games_fun as bfun
 
 # Paths
-MODEL_PATH = "models/chessnet_top_board.pth"
+MODEL_PATH = "models/final_model_after_all_files3.pth" 
 
 # Setup
 print("Loading model...")
@@ -17,7 +17,7 @@ model.eval()
 
 game = bfun.Chess("boards\szachy_plansza_top.txt")
 interface = Interface_Chess(game)
-strategy = Strategy_MCTS(game, model, simulations=100)  # You can increase simulations for stronger AI
+strategy = Strategy_MCTS(game, model, simulations=100)  
 
 # Choose who starts: 1 - human starts (white), 2 - model starts (black)
 HUMAN_PLAYER = 1
